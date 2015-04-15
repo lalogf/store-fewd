@@ -35,7 +35,12 @@ var ready = function(){
 
 		}
 
-	})
+	});
+	$("li").click(function(){
+		$("nav .active").removeClass("active");
+		$(this).attr("class","active");
+	});
+
 };
 
 $(document).ready(ready);
